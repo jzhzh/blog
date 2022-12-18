@@ -156,7 +156,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/your_name/your_repo_name
+  repository: git@github.com:username/reponame.git
   branch: main
 ```
 
@@ -179,7 +179,7 @@ git remote add origin git@github…..git
 git push -u origin main
 ```
 
-**Notice that you should not run** `hexo generate` **or** `hexo g` **or** `hexo d` **because Netlify will help us to generate and deploy the site automatically.**
+**Notice that you should not run** `hexo generate` **or** `hexo g` **or** `hexo d` **because Netlify will help us to generate and deploy the site automatically using the build command** `hexo generate`.
 
 ### Netlify
 
@@ -251,6 +251,8 @@ You can simply remove md files in ` source -> _posts` folder. And push the local
 
 ## Tips
 
+### Insecure mixed content detected in
+
 You may notice that there is an alert of Netlify which said that **Insecure mixed content detected in**. The reason for that is the configuration file sets `url` as `http` and `example.com`.
 
 So you need to modify the configuration file `_config.yml` of you blog.
@@ -260,6 +262,12 @@ So you need to modify the configuration file `_config.yml` of you blog.
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://your_domain.com
 ```
+
+### Hexo + GitHub Pages
+
+Because Netlify uses the build command `hexo generate`, we cannot use `hexo generate` and `hexo deploy` (which uses the deploy settings in `_config.yml`) to deploy the blog site on the repo whose name is `yourname.github.io`. That means Netlify is in conflict with `hexo deploy` on your local environment and also in conflict with the repo whose name is `yourname.github.io`.
+
+If you want to deploy the blog site on GitHub Pages, you just need to set the deploy settings in `_config.yml` as in the section **Configuration of Hexo**. And then run `hexo generate` and `hexo deploy` on your local environment. GitHub will automatically deploy the blog site with GitHub Actions (although in actions workflow it say that it builds with Jekyll, it actually build with Hexo). You **don't** need to `git init` local blog folder and connect to the GitHub repo because `hexo deploy` will only use the deploy settings in `_config.yml` and help you to push and deploy the blog site on GitHub.
 
 ## Conclusion
 
