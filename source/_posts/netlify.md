@@ -1,5 +1,5 @@
 ---
-title: How to build a blog with Hexo + GitHub + Netlify
+title: How can we build a blog with Hexo + GitHub + Netlify
 date: 2022-12-18 11:35:04
 tags: blog
 ---
@@ -189,7 +189,7 @@ Log in [Netlify website](https://www.netlify.com/), select import from an exitst
 
 ![](https://i.imgur.com/VkCweN6.png)
 
-Then the site has been succefully deployed.
+Then the site has been successfully deployed.
 
 #### Custom domains
 
