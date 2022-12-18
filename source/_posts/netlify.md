@@ -23,6 +23,8 @@ The reasons why I choose [Netlify](https://www.netlify.com/) are:
 
 Alternatively, you can also choose GitHub Pages (Maybe I will move my blog to GitHub Pages in the future).
 
+<!--more-->
+
 ## Steps to build your own blog
 
 ### Node.js and Git
