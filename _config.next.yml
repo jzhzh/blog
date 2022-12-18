@@ -36,10 +36,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -67,7 +67,7 @@ creative_commons:
   # Available values: big | small
   size: small
   sidebar: false
-  post: false
+  post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language:
@@ -587,7 +587,7 @@ lazyload: false
 # Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
 # Server-side plugin: https://github.com/next-theme/hexo-pangu
-pangu: false
+pangu: true
 
 # Prefetch links based on what is in the user's viewport.
 # For more information: https://getquick.link
@@ -845,7 +845,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto

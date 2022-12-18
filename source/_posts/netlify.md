@@ -4,4 +4,4 @@ date: 2022-12-18 11:35:04
 tags: blog
 ---
 
-# Why
+# Why did I choose Hexo + GitHub + Netlify?
