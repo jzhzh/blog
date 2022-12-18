@@ -235,7 +235,7 @@ You can use bash to push the repo to GitHub:
 
 ```bash
 git add
-git commit -m “”
+git commit -m ""
 git push -u origin main
 ```
 
