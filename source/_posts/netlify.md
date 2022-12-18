@@ -41,7 +41,7 @@ Here I also recommend to install [GitHub Desktop](https://desktop.github.com/) b
 
 Create a new repo for storing all the files of your blog.
 
-Notice that you **should not** name your repo as `yourname.github.io` if you want to use Netlify. Because if you use `yourname.github.io` as your repo name, GitHub will regards it as a GitHub Page automatically and do GitHub Actions (Build with Jekyll) to deploy the site automatically.
+Note that you **should not** name your repo as `yourname.github.io` if you want to use Netlify. Because if you use `yourname.github.io` as your repo name, GitHub will regards it as a GitHub Page automatically and do GitHub Actions (Build with Jekyll) to deploy the site automatically.
 
 Also you should set the repo as **Public** and without **README.md** file.
 
@@ -95,7 +95,7 @@ cd blog
 npm install
 ```
 
-Notice that `blog` in `hexo init blog` and `cd blog` is the folder name of your blog. You can customize it such as `hexo init myblog`.
+Note that `blog` in `hexo init blog` and `cd blog` is the folder name of your blog. You can customize it such as `hexo init myblog`.
 
 #### NexT Theme 
 
@@ -110,7 +110,7 @@ cd blog
 npm install hexo-theme-next
 ```
 
-Notice that if you install NexT in this way (npm), the theme will appear in the **node_modules** folder. If you install NexT in the second way (git), it will appear in the **theme** folder.
+Note that if you install NexT in this way (npm), the theme will appear in the **node_modules** folder. If you install NexT in the second way (git), it will appear in the **theme** folder.
 
 ##### Configure your NexT Theme
 
@@ -160,6 +160,8 @@ deploy:
   branch: main
 ```
 
+Note that the repository attribute should be SSH version of GitHub repo. If you use HTTPS version of GitHub repo, you will be asked to input the username and password of GitHub and also will fail to deploy your blog site because you will need to create **Personal access tokens** in the **Developer settings** of GitHub.
+
 ### Push Blog to GitHub
 
 Before we push the blog to GitHub, we need to make sure two things:
@@ -179,7 +181,7 @@ git remote add origin git@github…..git
 git push -u origin main
 ```
 
-**Notice that you should not run** `hexo generate` **or** `hexo g` **or** `hexo d` **because Netlify will help us to generate and deploy the site automatically using the build command** `hexo generate`.
+**Note that you should not run** `hexo generate` **or** `hexo g` **or** `hexo d` **because Netlify will help us to generate and deploy the site automatically using the build command** `hexo generate`.
 
 ### Netlify
 
@@ -218,7 +220,7 @@ Then, you will find a new md file whose name is `new_article_file_name` in ` sou
 
 For the title of your article, you can set it on the top part of md file. 
 
-Notice that:
+Note that:
 
 1. `new_article_file_name` is the Markdown file name, but not the title of your article.
 2. When you start writing Markdown file, the highest head should be head 2 not head 1 because you have set the title on the top part of md file.
@@ -253,7 +255,7 @@ You can simply remove md files in ` source -> _posts` folder. And push the local
 
 ### Insecure mixed content detected in
 
-You may notice that there is an alert of Netlify which said that **Insecure mixed content detected in**. The reason for that is the configuration file sets `url` as `http` and `example.com`.
+You may note that there is an alert of Netlify which said that **Insecure mixed content detected in**. The reason for that is the configuration file sets `url` as `http` and `example.com`.
 
 So you need to modify the configuration file `_config.yml` of you blog.
 
