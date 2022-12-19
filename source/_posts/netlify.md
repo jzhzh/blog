@@ -236,7 +236,7 @@ By the way, I use [Typora](https://typora.io/) + [iPic](https://apps.apple.com/u
 You can use bash to push the repo to GitHub:
 
 ```bash
-git add
+git add .
 git commit -m ""
 git push -u origin main
 ```
