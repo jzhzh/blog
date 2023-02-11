@@ -141,7 +141,7 @@ sidebar:
 avatar:
   # Replace the default image and set the url here.
   # url: #/images/avatar.gif
-  url: https://i.imgur.com/u5fH5Na.jpg
+  url: https://i.imgur.com/UF7kSxI.jpg
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -550,10 +550,10 @@ math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: false
+  every_page: true
 
   mathjax:
-    enable: false
+    enable: true
     # Available values: none | ams | all
     tags: none
 
