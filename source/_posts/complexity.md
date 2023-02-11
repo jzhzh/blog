@@ -18,6 +18,8 @@ Time Complexyity is growth trend of algorithm running **time** as **data size** 
 
 We denote the input data size as $n$. We also denote the number of operations as the function $T(n)$, the time complexity as $O(n)$ and this mathematical notation is called "Big-$O$ Notation", which stands for the "asymptotic upper bound" of the function $T(n)$.
 
+<!--more-->
+
 The defination of asymptotic upper bound is as follows:
 
 > If there exists a real number $c$ and a real number $n_0$, we have the formula (1):

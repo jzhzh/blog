@@ -50,8 +50,8 @@ darkmode: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://i.imgur.com/UF7kSxI.jpg
-  medium: https://i.imgur.com/UF7kSxI.jpg
+  small: /images/logo.svg
+  medium: /images/logo.svg
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /manifest.json
